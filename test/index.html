@@ -1,0 +1,24 @@
+<!-- index.html -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple JS App</title>
+</head>
+<body>
+    <h1>Simple Calculator</h1>
+    <input id="num1" type="number" placeholder="Number 1">
+    <input id="num2" type="number" placeholder="Number 2">
+    <button onclick="add()">Add</button>
+    <p id="result">Result: </p>
+
+    <script>
+        function add() {
+            const n1 = parseFloat(document.getElementById("num1").value);
+            const n2 = parseFloat(document.getElementById("num2").value);
+            const sum = n1 + n2;
+            document.getElementById("result").innerText = "Result: " + sum;
+        }
+    </script>
+</body>
+</html>

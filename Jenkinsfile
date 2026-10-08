@@ -13,7 +13,7 @@ pipeline {
             steps {
                 echo "Run application in Docker Container"
                 sh "docker rm -f mycontainer || true"
-                sh "docker run -d -p 5000:5000 --name mycontainer mypythonflaskapp"
+                sh "docker run -d -p 5001:5001 --name mycontainer mypythonflaskapp"
             }
         }
     }
